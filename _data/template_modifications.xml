@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="admin" template="reaction_edit" modification_key="reaction_edit_add_groups" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:macro template="display_order_macros" name="row"
+				arg-value="{$reaction.display_order}" />]]></find>
+    <replace><![CDATA[$0 <hr class="formRowSep" />
+    <xf:checkboxrow name="restriction_group_ids" value="{$reaction.restriction_group_ids}" listclass="listColumns"
+				label="{{ phrase('user_groups') }}"
+				explain="{{ phrase('selected_groups_are_immune_to_the_reaction') }}">
+	<xf:options source="$userGroups" />
+</xf:checkboxrow>
+<hr class="formRowSep" />]]></replace>
+  </modification>
+</template_modifications>
