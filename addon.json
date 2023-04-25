@@ -1,7 +1,7 @@
 {
     "legacy_addon_id": "",
     "title": "[WH1] Restrict Reactions",
-    "description": "Restrict Reactions from Xenforo 2.2.x",
+    "description": "Restrict Reactions for Xenforo.",
     "version_id": 1000070,
     "version_string": "1.0.0",
     "dev": "wh1teend",
@@ -9,6 +9,15 @@
     "faq_url": "",
     "support_url": "",
     "extra_urls": [],
-    "require": [],
+    "require": {
+        "php": [
+            "7.4",
+            "PHP 7.4+"
+        ],
+        "XF": [
+            2010270,
+            "XenForo 2.1.2+"
+        ]
+    },
     "icon": "icon.png"
 }
